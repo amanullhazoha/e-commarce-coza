@@ -1,0 +1,23 @@
+@import "../../core/style/varibale";
+
+.content {
+    margin-bottom: 30px;
+
+    h3 {
+        font-size: 25px;
+        font-weight: 600;
+        color: $navColor;
+        margin-bottom: 20px;
+    }
+}
+
+.archive {
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        color: $bgBlackColor;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+}

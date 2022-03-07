@@ -1,0 +1,17 @@
+@import "../../core/style/varibale";
+
+#mainSection {
+  padding-top: 40px;
+  background: $colorWhite;
+
+  #products {
+    padding-top: 15px;
+
+    h1 {
+      font-size: 35px;
+      text-transform: uppercase;
+      color: $bgBlack;
+      margin-bottom: 10px;
+    }
+  }
+}

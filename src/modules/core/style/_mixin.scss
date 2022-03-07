@@ -1,0 +1,40 @@
+@import "./varibale";
+
+@mixin containerMedia($width) {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin col($width) {
+  width: $width;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@mixin spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin Button(
+  $bg: $buttonBg,
+  $color: $colorWhite,
+  $fontSize: 16px,
+  $padding: 10px 15px
+) {
+  background: $bg;
+  color: $color;
+  text-transform: uppercase;
+  font-size: $fontSize;
+  padding: $padding;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+@mixin ButtonHover($bg: $colorWhite, $color: $buttonBg) {
+  background: $bg;
+  color: $buttonBg;
+}

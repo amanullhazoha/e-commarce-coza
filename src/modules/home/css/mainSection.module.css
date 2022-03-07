@@ -1,0 +1,16 @@
+#mainSection {
+  padding-top: 40px;
+  background: #ffff;
+}
+
+#mainSection #products {
+  padding-top: 15px;
+}
+
+#mainSection #products h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=mainSection.module.css.map */

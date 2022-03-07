@@ -1,0 +1,54 @@
+.contact {
+  padding: 40px 60px;
+  border-left: 1px solid #b2b2b2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.contact .group i {
+  font-size: 22px;
+  color: #b2b2b2;
+  width: 60px;
+  text-align: center;
+}
+
+.contact .group h3 {
+  font-size: 22px;
+  color: #333333;
+  font-weight: 500;
+}
+
+.contact .group p {
+  color: #6c7ae0;
+  font-size: 17px;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.contact .group .address {
+  color: #b2b2b2;
+}
+
+@media (max-width: 940px) {
+  .contact {
+    padding: 60px 15px;
+    border-left: none;
+    border-top: 1px solid #b2b2b2;
+  }
+}
+/*# sourceMappingURL=address.module.css.map */

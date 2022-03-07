@@ -1,0 +1,44 @@
+#mainSection {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+#mainSection .contentText {
+  padding-bottom: 40px;
+}
+
+#mainSection .contentText h3 {
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+#mainSection .contentText p {
+  color: #b2b2b2;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+#mainSection .contentText p:last-child {
+  margin-bottom: 0;
+}
+
+#mainSection .contentText .qutos {
+  border-left: 3px solid #b2b2b2;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+#mainSection .contentText .qutos p {
+  color: #888;
+}
+
+#mainSection .contentText .qutos p span {
+  font-size: 16px;
+  color: #555555;
+}
+
+#mainSection .contentText .qutos p:last-child {
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=about.module.css.map */

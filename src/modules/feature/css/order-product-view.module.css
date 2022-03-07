@@ -1,0 +1,129 @@
+.tableContent {
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+.tableContent table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.tableContent table tr {
+  border: 1px solid #b2b2b2;
+}
+
+.tableContent table thead {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #555555;
+}
+
+.tableContent table thead td {
+  padding: 10px 40px;
+}
+
+.tableContent table tbody td {
+  text-align: center;
+  color: #666666;
+  font-size: 17px;
+}
+
+.tableContent table tbody td .productDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tableContent table tbody td .productDesign img {
+  width: 60px;
+  height: 80px;
+  margin-right: 30px;
+}
+
+.tableContent table tbody td .countingBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tableContent table tbody td .countingBtn button,
+.tableContent table tbody td .countingBtn p {
+  border: 1px solid #b2b2b2;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  background: transparent;
+}
+
+.tableContent table tbody td .countingBtn p {
+  background: #f7f7f7;
+  border-left: none;
+  border-right: none;
+  line-height: 36px;
+}
+
+.tableContent table tbody td .countingBtn button:hover {
+  background: #6c7ae0;
+  color: #ffff;
+}
+
+.tableContent table tbody td:first-child {
+  padding: 30px 0 30px 40px;
+}
+
+.tableContent table tbody td:last-child {
+  padding: 30px 40px 30px 0;
+}
+
+.tableContent table .couponeCode tr td input {
+  border-radius: 50px;
+  color: #666666;
+  font-size: 16px;
+  padding: 7px 10px;
+  outline: none;
+  border: 1px solid #b2b2b2;
+  width: 100%;
+}
+
+.tableContent table table {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.tableContent table table tr {
+  border: none;
+}
+
+.tableContent table table tr td {
+  text-align: center;
+  padding: 0;
+}
+
+.tableContent table table tr td button {
+  background: #e6e6e6;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.tableContent table table tr td button:hover {
+  color: #ffff;
+  background: #6c7ae0;
+}
+/*# sourceMappingURL=order-product-view.module.css.map */

@@ -1,0 +1,40 @@
+@import "../../core/style/varibale";
+@import "../../core/style/mixin";
+
+.form {
+    padding: 40px 60px;
+    text-align: center;
+    border-right: 1px solid $bgBlackColor;
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 15px 15px;
+        font-size: 16px;
+        color: $navColor;
+        border: 1px solid $bgBlackColor;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    textarea {
+        height: 200px;
+        margin-top: 15px;
+    }
+
+    button {
+        @include Button($bg: $bgBlack, $color: $colorWhite);
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    button:hover {
+        background: $buttonBg;
+    }
+
+    @media (max-width: 940px) {
+        padding: 60px 15px;
+        border-right: none;
+        border-bottom: 1px solid $bgBlackColor;
+    }
+}

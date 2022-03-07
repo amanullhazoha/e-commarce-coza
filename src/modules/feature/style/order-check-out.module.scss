@@ -1,0 +1,30 @@
+@import "../../core/style/varibale";
+@import "../../core/style/mixin";
+
+.checkout {
+    width: 100%;
+    margin-bottom: 0;
+
+    tr {
+      border: none;
+      td {
+        text-align: center;
+        padding: 0;
+
+        button {
+          @include Button(
+            $bg: $btnGray,
+            $color: $navColor,
+            $fontSize: 13px,
+            $padding: 10px 30px
+          );
+          font-weight: 600;
+        }
+
+        button:hover {
+          color: $colorWhite;
+          background: $buttonBg;
+        }
+      }
+    }
+  }

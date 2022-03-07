@@ -1,0 +1,36 @@
+@import "../../core/style/varibale";
+
+.content {
+    margin-bottom: 30px;
+
+    h3 {
+        font-size: 25px;
+        font-weight: 600;
+        color: $navColor;
+        margin-bottom: 20px;
+    }
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        button {
+            border: 1px solid $logoColor;
+            font-size: 16px;
+            text-transform: capitalize;
+            border-radius: 50px;
+            background: transparent;
+            color: $logoColor;
+            padding: 5px 15px;
+        }
+
+        button:hover {
+            color: $buttonBg;
+            border: 1px solid $buttonBg;
+        }
+    }
+}

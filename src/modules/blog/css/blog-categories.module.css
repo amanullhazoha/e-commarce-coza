@@ -1,0 +1,21 @@
+.content {
+  margin-bottom: 30px;
+}
+
+.content h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.catagorie li {
+  border-top: 1px solid #e6e6e6;
+  padding: 7px 5px;
+  color: #b2b2b2;
+}
+
+.catagorie li:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+/*# sourceMappingURL=blog-categories.module.css.map */

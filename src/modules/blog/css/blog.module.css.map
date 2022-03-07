@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACT,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;EACpB,UAAU,ECAD,KAAK;CDCjB",
+    "sources": [
+        "../style/blog.module.scss",
+        "../../core/style/_varibale.scss"
+    ],
+    "names": [],
+    "file": "blog.module.css"
+}

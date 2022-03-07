@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,MAAM,CAAC;EACL,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;EACpB,UAAU,ECNF,OAAO;CDoChB;;AAjCD,AAMI,MANE,CAKJ,aAAa,CACX,cAAc,CAAC;EACb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAQxB;;AAhBL,AAWQ,MAXF,CAKJ,aAAa,CACX,cAAc,CAIZ,CAAC,CACC,GAAG,CAAC;EACF,YAAY,EAAE,GAAG;EACjB,WAAW,EAAE,GAAG;CACjB;;AAdT,AAkBI,MAlBE,CAKJ,aAAa,CAaX,CAAC,CAAC;EACA,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,MAAM;EAClB,KAAK,ECvBI,OAAO;EDwBhB,SAAS,EAAE,IAAI;CAShB;;AA/BL,AAwBM,MAxBA,CAKJ,aAAa,CAaX,CAAC,CAMC,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;CAChB;;AA1BP,AA4BM,MA5BA,CAKJ,aAAa,CAaX,CAAC,CAUC,CAAC,CAAC;EACA,KAAK,EC5BF,OAAO;CD6BX",
+    "sources": [
+        "../style/footer.module.scss",
+        "../style/_varibale.scss",
+        "../style/_mixin.scss",
+        "../style/_varibale.scss"
+    ],
+    "names": [],
+    "file": "footer.module.css"
+}

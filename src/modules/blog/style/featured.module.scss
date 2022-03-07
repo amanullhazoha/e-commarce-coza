@@ -1,0 +1,38 @@
+@import "../../core/style/varibale";
+
+.content {
+    margin-bottom: 30px;
+
+    h3 {
+        font-size: 25px;
+        font-weight: 600;
+        color: $navColor;
+        margin-bottom: 20px;
+    }
+}
+
+.featured {
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+            margin-right: 20px;
+            width: 90px;
+            height: 110px;
+        }
+
+        .title {
+            p {
+                font-size: 16px;
+                color: $lightGray;
+            }
+
+            span {
+                color: $bgBlackColor;
+                font-size: 20px;
+            }
+        }
+    }
+}

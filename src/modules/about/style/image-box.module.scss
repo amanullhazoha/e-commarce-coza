@@ -1,0 +1,68 @@
+@import "../../core/style/varibale";
+
+.content {
+    padding: 30px;
+    figure {
+        border: 3px solid $bgBlackColor;
+        position: relative;
+        height: 324px;
+        width: 100%;
+
+        .position {
+            overflow: hidden;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+
+            img {
+                transform: scale(1);
+                transition: transform 0.4s ease-in-out;
+            }
+        }
+    }
+
+    figure:hover {
+        .position {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        figure {
+            height: 257px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        figure {
+            height: 630px;
+            .position {
+                right: -20px;
+            }
+        }
+    }
+
+    @media (max-width: 445px) {
+        figure {
+            height: 250px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        figure {
+            height: 210px;
+        }
+    }
+}
+
+.content:nth-child(odd) {
+    figure {
+        img {
+            left: -20px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../core/style/varibale";
+
+.content {
+    margin-bottom: 30px;
+
+    h3 {
+        font-size: 25px;
+        font-weight: 600;
+        color: $navColor;
+        margin-bottom: 20px;
+    }
+}
+
+.catagorie {
+    li {
+        border-top: 1px solid $btnGray;
+        padding: 7px 5px;
+        color: $bgBlackColor;
+    }
+
+    li:last-child {
+        border-bottom: 1px solid $btnGray;
+    }
+}

@@ -1,0 +1,108 @@
+.content {
+  border: 1px solid #b2b2b2;
+  padding: 25px;
+}
+
+.content h3 {
+  font-size: 24px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.content .price,
+.content .shipping,
+.content .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content .price .textBold,
+.content .shipping .textBold,
+.content .total .textBold {
+  text-transform: capitalize;
+  margin-right: 20px;
+  font-size: 19px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.content .price span,
+.content .total span {
+  font-size: 19px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.content .shipping {
+  border-top: 1px dotted #6c7ae0;
+  border-bottom: 1px dotted #6c7ae0;
+}
+
+.content .shipping .address {
+  padding-right: 15px;
+}
+
+.content .shipping .address p {
+  color: #b2b2b2;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.content .shipping .address span {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: normal;
+  color: #222222;
+}
+
+.content .shipping .address input,
+.content .shipping .address select {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #b2b2b2;
+  outline: none;
+  border-radius: 5px;
+  color: #b2b2b2;
+}
+
+.content .shipping button {
+  background: #e6e6e6;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  margin-top: 15px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.content .shipping button:hover {
+  background: #6c7ae0;
+  color: #ffff;
+}
+
+.content .checkOut button {
+  background: #222222;
+  color: #ffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.content .checkOut button:hover {
+  background: #6c7ae0;
+  color: #ffff;
+}
+/*# sourceMappingURL=product-shipping.module.css.map */

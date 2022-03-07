@@ -1,0 +1,100 @@
+@import "../../core/style/varibale";
+@import "../../core/style/mixin";
+
+.content {
+    border: 1px solid $bgBlackColor;
+    padding: 25px;
+
+    h3 {
+        font-size: 24px;
+        color: $navColor;
+        text-transform: uppercase;
+    }
+
+    .price,
+    .shipping,
+    .total {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .textBold {
+            text-transform: capitalize;
+            margin-right: 20px;
+            font-size: 19px;
+            font-weight: 600;
+            color: $navColor;
+        }
+    }
+
+    .price,
+    .total {
+        span {
+            font-size: 19px;
+            font-weight: 600;
+            color: $navColor;
+        }
+    }
+
+    .shipping {
+        border-top: 1px dotted $buttonBg;
+        border-bottom: 1px dotted $buttonBg;
+
+        .address {
+            padding-right: 15px;
+
+            p {
+                color: $bgBlackColor;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            span {
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: normal;
+                color: $bgBlack;
+            }
+
+            input,
+            select {
+                margin-top: 10px;
+                width: 100%;
+                padding: 5px 10px;
+                border: 1px solid $bgBlackColor;
+                outline: none;
+                border-radius: 5px;
+                color: $bgBlackColor;
+            }
+        }
+
+        button {
+            @include Button($fontSize: 14px, $bg: $btnGray, $color: $navColor);
+            margin-top: 15px;
+            width: 100%;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: $buttonBg;
+            color: $colorWhite;
+        }
+    }
+
+    .checkOut {
+        button {
+            @include Button(
+                $fontSize: 15px,
+                $bg: $bgBlack,
+                $color: $colorWhite
+            );
+            width: 100%;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: $buttonBg;
+            color: $colorWhite;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    background: #F0F2F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content{
+        background: #fff;
+        padding: 20px 15px;
+        border-radius: 7px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+            0 8px 16px rgba(0, 0, 0, 0.1);
+        
+        h3{
+            font-size: 28px;
+            text-align: center;
+            padding-bottom: 20px;
+            color:rgba(14, 167, 214, 0.8)
+        }
+
+        button{
+            width: 100%;
+            text-transform: capitalize;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACX,WAAW,EAAE,IAAI;EACjB,UAAU,ECCC,KAAK;CDWjB;;AAdD,AAIE,YAJU,CAIV,SAAS,CAAC;EACR,WAAW,EAAE,IAAI;CAQlB;;AAbH,AAOI,YAPQ,CAIV,SAAS,CAGP,EAAE,CAAC;EACD,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,SAAS;EACzB,KAAK,ECZD,OAAO;EDaX,aAAa,EAAE,IAAI;CACpB",
+    "sources": [
+        "../style/mainSection.module.scss",
+        "../../core/style/_varibale.scss"
+    ],
+    "names": [],
+    "file": "mainSection.module.css"
+}

@@ -1,0 +1,31 @@
+.checkout {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.checkout tr {
+  border: none;
+}
+
+.checkout tr td {
+  text-align: center;
+  padding: 0;
+}
+
+.checkout tr td button {
+  background: #e6e6e6;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.checkout tr td button:hover {
+  color: #ffff;
+  background: #6c7ae0;
+}
+/*# sourceMappingURL=order-check-out.module.css.map */

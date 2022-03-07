@@ -1,0 +1,44 @@
+@import "../../core/style/varibale";
+
+.contact {
+    padding: 40px 60px;
+    border-left: 1px solid $bgBlackColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .group {
+      display: flex;
+      margin-bottom: 15px;
+
+      i {
+        font-size: 22px;
+        color: $bgBlackColor;
+        width: 60px;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 22px;
+        color: rgb(51, 51, 51);
+        font-weight: 500;
+      }
+
+      p {
+        color: $buttonBg;
+        font-size: 17px;
+        width: 100%;
+        padding-top: 15px;
+      }
+
+      .address {
+        color: $bgBlackColor;
+      }
+    }
+
+    @media (max-width: 940px) {
+      padding: 60px 15px;
+      border-left: none;
+      border-top: 1px solid $bgBlackColor;
+    }
+  }

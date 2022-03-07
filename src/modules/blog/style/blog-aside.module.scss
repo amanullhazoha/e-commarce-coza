@@ -1,0 +1,24 @@
+@import "../../core/style/varibale";
+
+.contentAside {
+    input {
+        width: 100%;
+        padding: 5px 15px;
+        border: 1px solid $logoColor;
+        outline: none;
+        border-radius: 50px;
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .content {
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 25px;
+            font-weight: 600;
+            color: $navColor;
+            margin-bottom: 20px;
+        }
+    }
+}

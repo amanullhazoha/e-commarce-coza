@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACT,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;EACpB,UAAU,ECAD,KAAK;CDajB;;AAhBD,AAKI,YALQ,CAKR,QAAQ,CAAC;EACL,MAAM,EAAE,GAAG,CAAC,KAAK,CCPV,OAAO;CDgBjB;;AAfL,AAQQ,YARI,CAKR,QAAQ,CAGJ,EAAE,CAAC;EACC,SAAS,EAAE,IAAI;EACf,KAAK,ECVN,OAAO;EDWN,WAAW,EAAE,GAAG;EAChB,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "../style/contact.module.scss",
+        "../../core/style/_varibale.scss"
+    ],
+    "names": [],
+    "file": "contact.module.css"
+}

@@ -1,0 +1,39 @@
+.content {
+  margin-bottom: 30px;
+}
+
+.content h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tags li {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.tags li button {
+  border: 1px solid #666666;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 50px;
+  background: transparent;
+  color: #666666;
+  padding: 5px 15px;
+}
+
+.tags li button:hover {
+  color: #6c7ae0;
+  border: 1px solid #6c7ae0;
+}
+/*# sourceMappingURL=blog-tag.module.css.map */

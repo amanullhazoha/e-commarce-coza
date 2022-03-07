@@ -1,0 +1,27 @@
+@import "../../core/style/varibale";
+@import "../../core/style/mixin";
+
+.productView {
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  .paginationBtn {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+
+    button {
+      @include Button(
+        $bg: #e6e6e6,
+        $color: $bgBlack,
+        $fontSize: 17px,
+        $padding: 10px 50px
+      );
+    }
+
+    button:hover {
+      background: $bgBlack;
+      color: $colorWhite;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.content {
+  margin-bottom: 40px;
+}
+
+.content figure {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.9s ease;
+  transition: -webkit-transform 0.9s ease;
+  transition: transform 0.9s ease;
+  transition: transform 0.9s ease, -webkit-transform 0.9s ease;
+}
+
+.content figure img {
+  margin-bottom: -4px;
+}
+
+.content figure figcaption {
+  text-align: center;
+  position: absolute;
+  width: 70px;
+  padding: 10px 5px;
+  top: 15px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.content figure figcaption p {
+  font-size: 30px;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.content figure figcaption span {
+  font-size: 13px;
+  color: #666666;
+  font-weight: 600;
+}
+
+.content figure img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.content a {
+  color: #333333;
+}
+
+.content a h2 {
+  font-size: 27px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  color: #888888;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.content .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .author ul li {
+  color: #333333;
+  float: left;
+  font-size: 16px;
+  border-right: 1px solid #666666;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.content .author ul li:first-child {
+  padding-left: 0;
+}
+
+.content .author ul li:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+.content .author button {
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #555555;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content .author button:hover {
+  color: #6c7ae0;
+}
+
+@media (max-width: 580px) {
+  .content .author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content .author button {
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=blog-content.module.css.map */

@@ -1,0 +1,75 @@
+.filter {
+  background: #f2f2f2;
+}
+
+.filter .content {
+  padding: 25px 30px 0 30px;
+}
+
+.filter .content .mBottom {
+  margin-bottom: 30px;
+}
+
+.filter .content h3 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.filter .content ul li {
+  margin-bottom: 5px;
+}
+
+.filter .content ul li button {
+  background: transparent;
+  color: #aaaaaa;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+}
+
+.filter .content ul li button:hover {
+  color: #6c7ae0;
+  border-bottom: 1px solid #6c7ae0;
+}
+
+.filter .content .color li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter .content .color li span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.filter .content .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.filter .content .tags li {
+  margin-right: 10px;
+}
+
+.filter .content .tags li button {
+  border: 1px solid #aaaaaa;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.filter .content .tags li:hover button {
+  border: 1px solid #6c7ae0;
+}
+/*# sourceMappingURL=filter.module.css.map */

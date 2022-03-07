@@ -1,0 +1,31 @@
+.productView {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.productView .paginationBtn {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productView .paginationBtn button {
+  background: #e6e6e6;
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 10px 50px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+.productView .paginationBtn button:hover {
+  background: #222222;
+  color: #ffff;
+}
+/*# sourceMappingURL=productView.module.css.map */

@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,YAAY,CAAC;EACX,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;CAqBrB;;AAvBD,AAIE,YAJU,CAIV,cAAc,CAAC;EACb,WAAW,EAAE,IAAI;EACjB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAexB;;AAtBH,AASI,YATQ,CAIV,cAAc,CAKZ,MAAM,CAAC;EEcT,UAAU,EFZC,OAAO;EEalB,KAAK,ED3BG,OAAO;EC4Bf,cAAc,EAAE,SAAS;EACzB,SAAS,EFbQ,IAAI;EEcrB,OAAO,EFbS,IAAI,CAAC,IAAI;EEczB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,IAAI;CFdhB;;AAhBL,AAkBI,YAlBQ,CAIV,cAAc,CAcZ,MAAM,AAAA,MAAM,CAAC;EACX,UAAU,ECtBN,OAAO;EDuBX,KAAK,EClBE,KAAK;CDmBb",
+    "sources": [
+        "../style/productView.module.scss",
+        "../../core/style/_varibale.scss",
+        "../../core/style/_mixin.scss",
+        "../../core/style/_varibale.scss"
+    ],
+    "names": [],
+    "file": "productView.module.css"
+}

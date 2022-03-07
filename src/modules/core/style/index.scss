@@ -1,0 +1,39 @@
+@import "./mixin";
+@import "./varibale";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,figure,ul{
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.navActive{
+  color: red !important;
+}
+
+.filterActive {
+  color: $buttonBg !important;
+  border-bottom: 1px solid $buttonBg !important;
+}
+
+.btnActive {
+  color: $buttonBg;
+}

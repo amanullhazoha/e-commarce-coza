@@ -1,0 +1,18 @@
+#mainSection {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #ffff;
+}
+
+#mainSection .content {
+  border: 1px solid #b2b2b2;
+}
+
+#mainSection .content h2 {
+  font-size: 32px;
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/*# sourceMappingURL=contact.module.css.map */

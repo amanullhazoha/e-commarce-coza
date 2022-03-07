@@ -1,0 +1,45 @@
+@import "../../core/style/varibale";
+
+#mainSection {
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    .contentText {
+        padding-bottom: 40px;
+
+        h3 {
+            font-size: 28px;
+            color: $bgBlack;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: $bgBlackColor;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .qutos {
+            border-left: 3px solid $bgBlackColor;
+            padding-left: 30px;
+            font-size: 18px;
+
+            p {
+                color: #888;
+
+                span {
+                    font-size: 16px;
+                    color: $lightGray;
+                }
+            }
+
+            p:last-child {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

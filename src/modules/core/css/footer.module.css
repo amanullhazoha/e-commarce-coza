@@ -1,0 +1,35 @@
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #222222;
+}
+
+footer .footerBottom .paymentMethod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footerBottom .paymentMethod a img {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+footer .footerBottom p {
+  margin-top: 15px;
+  text-align: center;
+  color: #b2b2b2;
+  font-size: 17px;
+}
+
+footer .footerBottom p span {
+  font-size: 20px;
+}
+
+footer .footerBottom p a {
+  color: #6c7ae0;
+}
+/*# sourceMappingURL=footer.module.css.map */
