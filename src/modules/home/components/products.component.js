@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Row } from "react-bootstrap";
 import _ from "lodash";
 import { useDispatch, useSelector } from "react-redux";
@@ -21,7 +21,7 @@ const Products = () => {
     
     useEffect(() => {
         dispatch(productActions.getProducts(page));
-    }, [page])
+    }, [page, dispatch])
 
     const filterCatagory = () => {
         if (catagory.name.toLowerCase() === "all products") {
