@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
+import { getAuth, onAuthStateChanged } from "firebase/auth"
+import { useDispatch, useSelector } from "react-redux";
 
 import PrivateRoute from "./privateRoute";
 import PubliceRoute from "./publicRoute";
@@ -8,59 +11,72 @@ import { Feature } from "../feature/index";
 import { Blog } from "../blog/index";
 import { About } from "../about/index";
 import { Contact } from "../contact/index";
-import { LoginForm, Singin } from "../user"
+import { LoginForm, Singin, userAction } from "../user"
 
 const App = () => {
+    const dispatch = useDispatch();
+
+    const loggedInUser = useSelector(state => state.userReducer.loggedInUser);
+
+    useEffect(() => {
+        const auth = getAuth();
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            dispatch(userAction.createUser(user))
+        });
+
+        return unsubscribe;
+    }, []);
+
     return (
         <>
             <Routes>
                 <Route path="/" element={ 
-                        <PrivateRoute> 
+                        <PrivateRoute loggedInUser={loggedInUser}> 
                             <Home />
                         </PrivateRoute> 
                     } 
                 />
                 <Route path="/shop" element={ 
-                        <PrivateRoute> 
+                        <PrivateRoute loggedInUser={loggedInUser}> 
                             <Shop />
                         </PrivateRoute> 
                     } 
 
                  />
                 <Route path="/feature" element={ 
-                        <PrivateRoute> 
+                        <PrivateRoute loggedInUser={loggedInUser}> 
                             <Feature />
                         </PrivateRoute> 
                     } 
 
                 />
                 <Route path="/blog" element={ 
-                        <PrivateRoute> 
+                        <PrivateRoute loggedInUser={loggedInUser}> 
                             <Blog />
                         </PrivateRoute>
                     } 
                 />
                 <Route path="/about" element={ 
-                        <PrivateRoute> 
+                        <PrivateRoute loggedInUser={loggedInUser}> 
                             <About />
                         </PrivateRoute>  
                     } 
                 />
                 <Route path="/contact" element={
-                        <PrivateRoute> 
+                        <PrivateRoute loggedInUser={loggedInUser}> 
                             <Contact />
                         </PrivateRoute> 
                     } 
                 />
                 <Route path="/login" element={
-                        <PubliceRoute>
+                        <PubliceRoute loggedInUser={loggedInUser}>
                             <LoginForm /> 
                         </PubliceRoute>
                     } 
                 />
 
                 <Route path="/sing-in" element={
-                        <PubliceRoute>
+                        <PubliceRoute loggedInUser={loggedInUser}>
                             <Singin />
                         </PubliceRoute>
                     } 

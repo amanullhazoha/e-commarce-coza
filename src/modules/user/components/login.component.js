@@ -1,9 +1,10 @@
 import { Col } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import {  useDispatch } from "react-redux"
-import { Field, Form, Formik } from "formik"
+import { Field, Form, Formik, ErrorMessage } from "formik"
 
 import { login } from "../user.actions";
+import { loginSchema } from "../user.schema";
 import classes from "../style/login.module.scss";
 
 const LoginForm = (props) => {
@@ -23,6 +24,7 @@ const LoginForm = (props) => {
                             })
                         action.setSubmitting = false;
                     }}
+                    validationSchema={loginSchema}
                 >
                     {formikProps => (
                         <Form onSubmit={formikProps.handleSubmit}>
@@ -33,6 +35,9 @@ const LoginForm = (props) => {
                                 placeholder="Email" 
 
                             />
+                            <div className="invalid-feedback d-block mb-3">
+                                <ErrorMessage name="email" />
+                            </div>
                             
                             <Field 
                                 type="password" 
@@ -40,6 +45,9 @@ const LoginForm = (props) => {
                                 name="password" 
                                 placeholder="Password" 
                             />
+                            <div className="invalid-feedback d-block mb-3">
+                                <ErrorMessage name="password" />
+                            </div>
                             
                             <button type="submit" className="btn btn-primary mt-3">log in</button>
 

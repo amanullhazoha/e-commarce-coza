@@ -7,6 +7,9 @@ import { productActions } from "../../shop";
 const Product = ({ product, img }) => {
     const dispatch = useDispatch();
 
+    const orderProducts = useSelector(state => state.productReducer.orderProducts);
+    const orderProductModal = useSelector(state => state.productReducer.orderProductModal);
+
     const handleProduct = (product) => {
         const value = orderProducts.some(orderProduct => orderProduct.id === product.id);
         
@@ -19,9 +22,6 @@ const Product = ({ product, img }) => {
             dispatch(productActions.orderProduct(findProduct))
         }
     }
-
-    const orderProducts = useSelector(state => state.productReducer.orderProducts);
-    const orderProductModal = useSelector(state => state.productReducer.orderProductModal)
 
     return (
         <Col lg={3} sm={6} xs={12} className key={product.id}>

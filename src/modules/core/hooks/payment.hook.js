@@ -24,8 +24,6 @@ const usePayment = () => {
         getPayment();
     },[])
 
-    console.log(payment)
-
     return {
         error,
         payment,

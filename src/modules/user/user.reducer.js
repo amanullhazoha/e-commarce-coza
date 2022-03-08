@@ -9,10 +9,13 @@ const reducer = (state = initialStates, action) => {
         case Types.GET_LOGGEDIN_FULFILLED: {
             const [ data ] = action.payload.user.providerData;
 
-            return {
-                ...state, 
-                loggedInUser: data
-            }
+            return { ...state, loggedInUser: data }
+        }
+        case Types.CREATE_USER: {
+            return { ...state, loggedInUser: action.payload }
+        }
+        case Types.LOG_OUT_USER_FULFILLED: {
+            return { ...state, loggedInUser: null }
         }
     }
 

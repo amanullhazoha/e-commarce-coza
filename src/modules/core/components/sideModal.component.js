@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Modal from "./modal.component";
 import classes from "../style/sideModal.module.scss";
 
@@ -14,7 +16,7 @@ const SideModal = ({ orderProducts, toggler, totalAmount, removeProduct }) => {
             {orderProducts.map(product => (
                 <div className={classes.addCartList}>
                     <figure>
-                        <img src={product.thimbnil} className="img-fluid" alt="product" />
+                        <img src={product.thumbnil} className="img-fluid" alt="product" />
                     </figure>
 
                     <div className={classes.productName}>
@@ -35,8 +37,13 @@ const SideModal = ({ orderProducts, toggler, totalAmount, removeProduct }) => {
             <div className={classes.totalValue}>
                 <h3>Total: ${totalAmount}</h3>
                 <div className={classes.checkOut}>
-                    <button type="button">View Cart</button>
-                    <button type="button">Check Out</button>
+                    <Link to="/feature">
+                        <button type="button" onClick={() => toggler(prev => !prev)}>View Cart</button>
+                    </Link>
+
+                    <Link to="/feature">
+                        <button type="button" onClick={() => toggler(prev => !prev)}>Check Out</button>
+                    </Link>
                 </div>
             </div>
         </Modal>

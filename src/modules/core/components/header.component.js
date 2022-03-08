@@ -5,22 +5,21 @@ import { useDispatch, useSelector } from "react-redux";
 import classes from "../style/navbar.module.scss";
 import SideModal from "./sideModal.component";
 import { productActions } from "../../shop"
+import { userAction } from "../../user"
 
 const Header = () => {
     const dispatch = useDispatch();
     
+    const orderProducts = useSelector(state => state.productReducer.orderProducts);
+    const loggedInUser = useSelector(state => state.userReducer.loggedInUser);
     const [isOpen, setIsOpen] = useState(false);
     const [showSide, setShowSide] = useState(false);
-
-    const menuToggle = () => setIsOpen((prevState) => !prevState);
 
     const handleremoveOrderProduct = (id) => {
         const orderProductRemove = orderProducts.filter(product => product.id !== id);
 
         dispatch(productActions.orderProductRemove(orderProductRemove))
     }
-
-    const orderProducts = useSelector(state => state.productReducer.orderProducts);
 
     const totalValue = Math.round(orderProducts.reduce((prev, curr) => prev + curr.totalPrice, 0) * 100) / 100;
     
@@ -82,9 +81,6 @@ const Header = () => {
                         </div>
 
                         <ul className={classes.navIcon}>
-                            <li>
-                                <i className="fas fa-sign-in-alt" />
-                            </li>
                             <li onClick={() => setShowSide(prev => !prev)}>
                                 <i className="fas fa-shopping-cart" />
                                 <p>{orderProducts.length}</p>
@@ -93,10 +89,17 @@ const Header = () => {
                                 <i className="far fa-heart" />
                                 <p>0</p>
                             </li>
+                            <li style={{ marginRight: "10px" }}>    
+                                <h4 style={{ color: "#6C7AE0", textTransform: "capitalize" }}>{loggedInUser.displayName}</h4>
+                            </li>
+                            <li onClick={() => dispatch(userAction.logout())}>
+                                <i className="fas fa-sign-in-alt" />
+                            </li>
+                            
                             <button
                                 type="button"
                                 className={classes.active}
-                                onClick={menuToggle}
+                                onClick={() => setIsOpen((prevState) => !prevState)}
                             >
                                 <i
                                     className={`fas ${

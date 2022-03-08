@@ -20,7 +20,6 @@ const Service = ({ data }) => {
                         </div>
 
                         <div className={classes.bottom}>
-                            {/* <Link to="/shop">Shop Now</Link> */}
                             <span>Shop Now</span>
                             <div className={classes.border} />
                         </div>

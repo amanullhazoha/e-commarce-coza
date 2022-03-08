@@ -11,6 +11,8 @@ import { productActions } from "../../shop";
 const OrderProductView = () => {
     const dispatch = useDispatch();
 
+    const orderProducts = useSelector(state => state.productReducer.orderProducts)
+
     const columns = [
         {
             label: "product",
@@ -19,7 +21,7 @@ const OrderProductView = () => {
                 <td>
                     <div className={classes.productDesign}>
                         <img
-                            src={item.thimbnil}
+                            src={item.thumbnil}
                             alt="product"
                             className="img-fluid"
                         />
@@ -76,8 +78,6 @@ const OrderProductView = () => {
         updateOrderProducts.splice(index, 1, findProduct);
         dispatch(productActions.orderProducts(updateOrderProducts));
     };
-
-    const orderProducts = useSelector(state => state.productReducer.orderProducts)
 
     return (
         <Col className={classes.tableContent} lg={8}>
