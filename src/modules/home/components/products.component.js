@@ -19,9 +19,6 @@ const Products = () => {
     const loadMore = useSelector(state => state.productReducer.loadMore);
     const [page, setPage] =useState(1);
     
-    useEffect(() => {
-        dispatch(productActions.getProducts(page));
-    }, [page, dispatch])
 
     const filterCatagory = () => {
         if (catagory.name.toLowerCase() === "all products") {
@@ -74,6 +71,10 @@ const Products = () => {
     const sorted = sorting(filteringProducts);
     const filteringPrice = priceFilter(sorted);
     const filterProducts = colorFilter(filteringPrice);
+
+    useEffect(() => {
+        dispatch(productActions.getProducts(page));
+    }, [page])
 
     return (
         <div className={classes.productView}>

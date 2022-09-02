@@ -90,7 +90,7 @@ const Header = () => {
                                 <p>0</p>
                             </li>
                             <li style={{ marginRight: "10px" }}>    
-                                <h4 style={{ color: "#6C7AE0", textTransform: "capitalize" }}>{loggedInUser.displayName}</h4>
+                                <h4 style={{ color: "#6C7AE0", textTransform: "capitalize" }}>{loggedInUser?.displayName}</h4>
                             </li>
                             <li onClick={() => dispatch(userAction.logout())}>
                                 <i className="fas fa-sign-in-alt" />

@@ -14,7 +14,6 @@ const Layout = ({ children }) => {
 }
 
 const PrivateRoute = ({ children, ...rest }) => {
-
     return rest.loggedInUser ? <Layout children={children} /> : <Navigate to="/login" />
 }
 

@@ -31,9 +31,9 @@ const App = () => {
         <>
             <Routes>
                 <Route path="/" element={ 
-                        <PrivateRoute loggedInUser={loggedInUser}> 
+                        <PubliceRoute loggedInUser={loggedInUser}> 
                             <Home />
-                        </PrivateRoute> 
+                        </PubliceRoute> 
                     } 
                 />
                 <Route path="/shop" element={ 
