@@ -17,9 +17,9 @@ const reducer = (state = initialStates, action) => {
         case Types.LOG_OUT_USER_FULFILLED: {
             return { ...state, loggedInUser: null }
         }
+        default:
+            return state;
     }
-
-    return state;
 }
 
 export default reducer;

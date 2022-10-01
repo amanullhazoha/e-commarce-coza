@@ -1,11 +1,11 @@
-import { getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { getAuth, signOut } from "firebase/auth";
 import Types from "./user.types";
  
-export const login = (values) => {
-    const auth = getAuth();
+export const login = (value) => {
+    console.log(value)
     return {
         type: Types.GET_LOGGEDIN,
-        payload: signInWithEmailAndPassword(auth, values.email, values.password)
+        payload: value
     }
 }
 

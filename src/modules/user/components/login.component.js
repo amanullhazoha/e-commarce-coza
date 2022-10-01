@@ -2,14 +2,22 @@ import { Col } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import {  useDispatch } from "react-redux"
 import { Field, Form, Formik, ErrorMessage } from "formik"
-
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import { login } from "../user.actions";
 import { loginSchema } from "../user.schema";
 import classes from "../style/login.module.scss";
 
-const LoginForm = (props) => {
+const LoginForm = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate();
+
+    const logIn = async ({ email, password }) => {
+        const auth = getAuth();
+
+        const loginUser = await signInWithEmailAndPassword(auth, email, password);
+
+        dispatch(login(loginUser));
+    }
 
     return (
         <section className={classes.login}>
@@ -18,10 +26,9 @@ const LoginForm = (props) => {
                 <Formik
                     initialValues={{ email: "", password: "" }}
                     onSubmit={(values, action) => {
-                        dispatch(login(values))
-                            .then(res => {
-                            navigate("/")
-                            })
+                        logIn(values)
+                            .then(res => navigate("/"))
+                            .catch(err => console.log(err))
                         action.setSubmitting = false;
                     }}
                     validationSchema={loginSchema}
